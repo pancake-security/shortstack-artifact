@@ -6,7 +6,7 @@ srcdir="`cd "$srcdir"; pwd`"
 source $srcdir/../envs.sh
 
 sbin=$SHORTSTACK_ROOT/sbin
-export JIFFY_SERVERS=$SHORTSTACK_HOSTS
+export SHORTSTACK_SERVERS=$SHORTSTACK_HOSTS
 
 nl1=1
 nl2=1
