@@ -29,7 +29,7 @@ for x in 1 2 3 4; do
 	sleep 4;
 
 	# Run clients
-	/local/deploy/shortstack_benchmark -h /local/deploy/hosts.csv -t $trace -n $x -q 512 -o $config
+	/local/deploy/shortstack_benchmark -h /local/deploy/hosts.csv -t $trace -n $x -q 512 -o $config-x$x
 
 	sleep 2;
 
