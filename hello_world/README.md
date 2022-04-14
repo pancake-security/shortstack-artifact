@@ -44,7 +44,7 @@ git pull origin master
 Initialize setup
 
 ```
-cd hellow_world
+cd hello_world
 ./init_setup.sh traces/helloworld
 ```
 
