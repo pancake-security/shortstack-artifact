@@ -26,7 +26,7 @@ then
 fi
 
 echo "Generate + sync hosts file"
-python3 $SHORTSTACK_ROOT/gen_hosts_file.py /local/deploy/shortstack.hosts /local/deploy/hosts.csv $nl1 1 16 $nl2 1 16 $nl3 16 1 $nredis 1 1 0 $rep $rep
+python3 $SHORTSTACK_ROOT/gen_hosts_file.py /local/deploy/shortstack.hosts /local/deploy/hosts.csv $nl1 1 1 $nl2 1 1 $nl3 1 1 $nredis 1 1 0 $rep $rep
 $sbin/sync.sh /local/deploy/hosts.csv
 
 if [[ "$noredis" != "noredis" ]]
