@@ -47,6 +47,6 @@ $sbin/run_l3.sh /local/deploy/hosts.csv -s 1 -c 1 -y 1;
 sleep 4; 
 $sbin/run_l2.sh /local/deploy/hosts.csv $rep -c 1 -y 1; 
 sleep 4; 
-$sbin/run_l1.sh /local/deploy/hosts.csv $rep -c 1;
+$sbin/run_l1.sh /local/deploy/hosts.csv $rep -c 1 -f;
 sleep 4; 
 /local/deploy/proxy_server manager -h /local/deploy/hosts.csv -s
