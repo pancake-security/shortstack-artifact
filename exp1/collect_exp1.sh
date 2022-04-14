@@ -12,5 +12,5 @@ config=$1
 
 echo "X 	Throughput(ops/sec) 	Latency(microseconds)"
 for x in 1 2 3 4; do
-	paste <(echo $x) <(cat $srcdir/data/$config.stats | grep -i "xput" | awk '{print $2}') <(cat $srcdir/data/$config.stats | grep -i "average latency" | awk '{print $3}')
+	paste <(echo $x) <(cat $srcdir/data/$config-x$x.stats | grep -i "xput" | awk '{print $2}') <(cat $srcdir/data/$config-x$x.stats | grep -i "average latency" | awk '{print $3}')
 done
