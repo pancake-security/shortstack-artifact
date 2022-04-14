@@ -8,15 +8,15 @@ source $srcdir/../envs.sh
 sbin=$SHORTACK_ROOT/sbin
 export SERVERLIST=$SHORTSTACK_HOSTS
 
-nl1=$1
-nl2=$2
-nl3=$3
-rep=$4
-nredis=$5
-trace=$6
-objsz=$7
-nopushbins=$8
-noredis=$9
+nl1=1
+nl2=1
+nl3=1
+rep=1
+nredis=1
+trace=$1
+objsz=1000
+nopushbins="none"
+noredis="none"
 
 if [[ "$nopushbins" != "nopushbins" ]]
 then
