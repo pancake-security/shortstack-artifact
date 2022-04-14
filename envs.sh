@@ -2,4 +2,7 @@
 SHORTSTACK_ROOT=/home/ubuntu/shortstack
 
 # artifact root
-AFTRIFACT_ROOT=/home/ubuntu/shortstack-artifact
+ARTIFACT_ROOT=/home/ubuntu/shortstack-artifact
+
+# hosts file
+SHORTSTACK_HOSTS=/local/deploy/shortstack.hosts
