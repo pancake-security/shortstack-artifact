@@ -18,12 +18,6 @@ for x in 20 40 80 99; do
 
 	echo "Starting $config-skew$x";
 
-	# Initialize redis only during first run
-	redisflag="none";
-	if (( $x > 1 )); then
-		redisflag="noredis";
-	fi
-
 	trace="$trace_prefix-skew$x"
 	if (( $x == 99 )); then
 		trace=$trace_prefix
@@ -32,7 +26,7 @@ for x in 20 40 80 99; do
 	echo "Using trace $trace";
 
 	# Initialize setup
-	$ARTIFACT_ROOT/scripts/init_exp.sh $const_servers $const_servers $const_servers $rep $const_servers $trace $objsz nopushbins $redisflag
+	$ARTIFACT_ROOT/scripts/init_exp.sh $const_servers $const_servers $const_servers $rep $const_servers $trace $objsz nopushbins none
 
 	sleep 4;
 
