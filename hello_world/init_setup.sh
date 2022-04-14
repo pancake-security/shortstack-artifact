@@ -5,7 +5,7 @@ srcdir="`cd "$srcdir"; pwd`"
 
 source $srcdir/../envs.sh
 
-sbin=$SHORTACK_ROOT/sbin
+sbin=$SHORTSTACK_ROOT/sbin
 export SERVERLIST=$SHORTSTACK_HOSTS
 
 nl1=1
@@ -36,7 +36,7 @@ then
     $sbin/hosts.sh /local/deploy/stop_redis.sh; $sbin/run_redis.sh /local/deploy/hosts.csv
 
     echo "Init KV store + push distinfo"
-    /local/deploy/proxy_server init -h /local/deploy/hosts.csv -o $objsz -t /local/deploy/$trace -d /local/deploy/distinfo.bin && $sbin/sync.sh /local/deploy/distinfo.bin
+    /local/deploy/proxy_server init -h /local/deploy/hosts.csv -o $objsz -t $trace -d /local/deploy/distinfo.bin && $sbin/sync.sh /local/deploy/distinfo.bin
 
     # Hack: populate all keys on all redis
     echo "Populate all keys store"
