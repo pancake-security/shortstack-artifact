@@ -73,7 +73,7 @@ cd exp4
 Run the following to collect the results (instantaneous throughput over time)
 
 ```
-/collect_exp4.sh exp4-ycsb-a-faill1
+./collect_exp4.sh exp4-ycsb-a-faill1
 ```
 
 Use the following script to plot the graph of throughput over time (using gnuplot)
@@ -96,7 +96,7 @@ cd exp4
 Run the following to collect the results (instantaneous throughput over time)
 
 ```
-/collect_exp4.sh exp4-ycsb-a-faill2
+./collect_exp4.sh exp4-ycsb-a-faill2
 ```
 
 Use the following script to plot the graph of throughput over time (using gnuplot)
@@ -119,7 +119,7 @@ cd exp4
 Run the following to collect the results (instantaneous throughput over time)
 
 ```
-/collect_exp4.sh exp4-ycsb-a-faill3
+./collect_exp4.sh exp4-ycsb-a-faill3
 ```
 
 Use the following script to plot the graph of throughput over time (using gnuplot)
