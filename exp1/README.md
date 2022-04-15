@@ -78,7 +78,7 @@ Once the above is complete, you can use this to collect and print the results fo
 ./collect_exp1.sh exp1-ycsb-a
 ```
 
-**(Optional) Running YCSB-C**
+#### (Optional) Running YCSB-C
 If you would like to run the experiments with the YCSB-C workload, then you can simply repeat the above steps ("Running the experiments" part) with occurences of "ycsb-a" replaced by "ycsb-c".
 
 
