@@ -42,7 +42,7 @@ The repository is structured based on the Evaluation section in the paper. The f
 
 | Experiment Name / Section / Paragraph | Related Figures |	Experiment Directory | Estimated time |
 | :-------------- | :--------------- | :----------------- | :------------------ |
-| Throughput scalability analysis (S6.1 para 1)   |     	Figure 11, 13b  |      	[exp1](exp1)   | 20mins |      
+| Throughput scalability analysis (S6.1 para 1)   |     	Figure 11, 13b  |      	[exp1](exp1)   | 30mins |      
 |  Understanding scalability bottlenecks (S6.1 para 2) |  	Figure 12   |     [exp2](exp2)  |   45mins    |
 |   Sensitivity to skew in workload (S6.1 para 3)       | 	Figure 13a   |     [exp3](exp3)   |  20mins     | 
 | Failure recovery (S6.2) |	Figure 14 |       	[exp4](exp4)   |  45mins   | 
