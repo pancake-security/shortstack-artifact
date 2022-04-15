@@ -13,7 +13,7 @@ set ylabel "Throughput (Kops)" offset 1,0
 unset key
 set bmargin 4
 set tmargin 2
-set arrow from 875,graph(0,0) to 875,graph(1,1) nohead lw 4 lc rgb '#F3130C'
+set arrow from 1000,graph(0,0) to 1000,graph(1,1) nohead lw 4 lc rgb '#F3130C'
 
 set output outfile
 plot inpfile using (($0)*10):($1/1000.0) with lines lw 4 lc rgb '#107de8'
