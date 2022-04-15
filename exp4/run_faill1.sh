@@ -23,6 +23,6 @@ sleep 4;
 /local/deploy/proxy_server manager -h /local/deploy/hosts.csv -f l1_1_0_0 -z 15 &
 
 # Run clients
-/local/deploy/shortstack_benchmark -h /local/deploy/hosts.csv -t $trace -n $const_servers -q 512 -o $config-faill1 -m 10000
+/local/deploy/shortstack_benchmark -h /local/deploy/hosts.csv -t $trace -n $const_servers -q 512 -o $config-faill1 -m 10000 -w
 
 sleep 2;
