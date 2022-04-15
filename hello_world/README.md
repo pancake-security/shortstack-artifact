@@ -64,7 +64,7 @@ cd hello_world
 ./init_setup.sh traces/helloworld
 ```
 
-Once the above step is complete, clients can interact with Shortstack. The below command will run a client that executes the operations from the following simple trace: traces/helloworld, which performs PUT operations on 5 keys, and then performs GET operations on the same keys to retrieve their values.
+Once the above step is complete, clients can interact with Shortstack. The below command will run a client that executes the operations from the following simple trace: [traces/helloworld](traces/helloworld), which performs PUT operations on 5 keys, and then performs GET operations on the same keys to retrieve their values.
 
 ```
 /local/deploy/shortstack_driver -h /local/deploy/hosts.csv -t traces/helloworld
