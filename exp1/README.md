@@ -44,28 +44,42 @@ scp ~/shortstack.hosts ubuntu@<client-vm-private-ip>:/local/deploy/shortstack.ho
 
 Exit gateway VM (can be done using `exit` command). This is important. Please do not run actual scripts for experiments on the Gateway VM. Beyond this point, all following steps/commands are to be performed on the client VM.
 
-<SSH into client VM, pull latest updates>
+SSH into client VM (you should have obtained it's public IP address in the previous step)
+  
+```
+ssh -i shortstack.pem ubuntu@<client-vm-public-ip>
+```
 
-Push binaries
+Switch to `shortstack-artifact` and pull the latest updates
+
+```
+cd shortstack-artifact
+git pull origin master
+```
+
+Run the following to push binaries to all the VMs. This will ensure that all the VMs have up-to-date copies of all application binaries. 
 
 ```
 ./scripts/push_bins.sh
 ```
 
-Run  experiments
+### Running the experiments
+
+To ease evaluator burden, we have prepared scripts that automate the entire process of running the experiements. For each data point, the following script will take care of both setting up and initializing the cluster (key-value store, proxy servers) and running the clients which will execute the workload. Keep in mind that some steps of the inialization process can take time (upto a minute), and as a result you may see the script pause at certain points of time. 
 
 ```
 cd exp1
-./run_exp1.sh scale-ycsb-a /local/workloads/ycsb-a-1m
+./run_exp1.sh exp1-ycsb-a /local/workloads/ycsb-a-1m
 ```
 
-Collect and print results
+Once the above is complete, you can use this to collect and print the results for all the data points in readable form.
 
 ```
-./collect_exp1.sh scale-ycsb-a
+./collect_exp1.sh exp1-ycsb-a
 ```
 
 **(Optional) Running YCSB-C**
+If you would like to run the experiments with the YCSB-C workload, then you can simply repeat the above steps ("Running the experiments" part) with occurences of "ycsb-a" replaced by "ycsb-c".
 
 
 
