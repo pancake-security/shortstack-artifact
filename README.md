@@ -30,7 +30,7 @@ Please check this [document](docs/aws_info.md) for information on accessing and 
 
 ## Getting Started
 
-We provide a quick start guide to run a simple hello world example. Detailed instructions on how to run this on the AWS setup are provided [here](hello_world). Alternatively, one can also build Shortstack from source and run it locally on a single node for this simple example. Instructions on how to do so are provided in the main Shortstack repository [here](https://github.com/pancake-security/shortstack.git)
+We provide a quick start guide to run a simple hello world example. Detailed instructions on how to run this on the AWS setup are provided [here](hello_world). (We recommend that reviewers try this out in order to gain familiarity with the AWS setup). Alternatively, one can also build Shortstack from source and run it locally on a single node for this simple example. Instructions on how to do so are provided in the main Shortstack repository [here](https://github.com/pancake-security/shortstack.git)
 
 ## Reproducing Results
 
@@ -38,7 +38,7 @@ We provide a quick start guide to run a simple hello world example. Detailed ins
 
 Experiments described in the paper can be run using the scripts provided in this repository.
 
-The repository is structured based on the Evaluation section in the paper. The following table summarizes different experiments in the paper and the directory containing the respective experiment scripts. The READMEs in the respective experiment directories explain the experiment in detail.
+The repository is structured based on the Evaluation section in the paper. The following table summarizes different experiments in the paper and the directory containing the respective experiment scripts. The READMEs in the respective experiment directories provide detailed instructions to how to run each experiment.
 
 | Experiment Name / Section / Paragraph | Related Figures |	Experiment Directory | Estimated time |
 | :-------------- | :--------------- | :----------------- | :------------------ |
