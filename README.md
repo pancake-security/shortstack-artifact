@@ -28,7 +28,7 @@ Please check this [document](docs/aws_info.md) for information on accessing and 
 * [`scripts`](scripts) Contains common scripts used for running experiments and for AWS management.
 
 
-## Getting Started
+## Getting Started (Estimated time: 15 mins)
 
 We provide a quick start guide to run a simple hello world example. Detailed instructions on how to run this on the AWS setup are provided [here](hello_world) (This is the same setup that will be used later for reproducing the paper results. We recommend that reviewers try this out in order to gain familiarity with the setup). Alternatively, one can also build Shortstack from source and run it locally on a single node for this simple example. Instructions on how to do so are provided in the main Shortstack repository [here](https://github.com/pancake-security/shortstack.git)
 
