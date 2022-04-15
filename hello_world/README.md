@@ -26,13 +26,13 @@ cd scripts/aws
 
 For this example we need 5 VMs. Hence, make sure that the number returned by the above is greater than or equal to 5 before proceeding. If not, please contact us.
 
-Next, we generate the "hosts file" which contains a list of the IP addresses of the available VMs, using ther following script. This script also outputs the details (public, private IP address) of the client VM on which we will run the scripts for the rest of this example. Make note of these IP addresses.  
+Next, we generate the "hosts file" which contains a list of the IP addresses of the available VMs, using the following script. This script also outputs the details (public, private IP address) of the client VM on which we will run the scripts for the rest of this example. Make note of these IP addresses.  
 
 ```
 ./gen-hosts.sh ~/shortstack.hosts
 ```
 
-Copy the hosts file to the client VM using the following command. Replace <client-vm-private-ip> with the private IP address obatined from the previous command.
+Copy the hosts file to the client VM using the following command. Replace `<client-vm-private-ip>` with the private IP address obatined from the previous command.
 
 ```
 scp ~/shortstack.hosts ubuntu@<client-vm-private-ip>:/local/deploy/shortstack.hosts
