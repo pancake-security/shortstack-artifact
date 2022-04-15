@@ -13,7 +13,7 @@ chmod 400 shortstack.pem
 ssh -i shortstack.pem ubuntu@public_ip
 ```
 
-We also provide AWS EC2 AMI images for all systems, saving the effort from setting up their specific environments if the evaluators want to launch the instances from their own AWS accounts. 
+We also provide AWS EC2 AMI images and necessary scripts, saving the effort from setting up their specific environments if the evaluators want to launch the instances from their own AWS accounts. 
 
 Please check this [document](docs/aws_info.md) for information on accessing and using AWS EC2 machines.
 
