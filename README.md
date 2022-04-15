@@ -20,7 +20,7 @@ Please check this [document](docs/aws_info.md) for information on accessing and 
 
 ## Directory structure 
 * [`docs`](docs) Documentation for general environment setup used by all experiments.
-* [`hello_world`](hello_worlds) A simple hello world example for getting started. 
+* [`hello_world`](hello_world) A simple hello world example for getting started. 
 * [`exp1`](exp1) Throughput scalability analysis.
 * [`exp2`](exp2) Understanding scalability bottlenecks.
 * [`exp3`](exp3) Sensitivity to skew in workload.
