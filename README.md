@@ -51,6 +51,7 @@ The repository is structured based on the Evaluation section in the paper. The f
 |   Sensitivity to skew in workload (S6.1 para 3)       | 	Figure 13a   |     [exp3](exp3)   |  30mins     | 
 | Failure recovery (S6.2) |	Figure 14 |       	[exp4](exp4)   |  45mins   | 
 
+
 **Tip:** Since many of the individual experiment scripts take on the order of several minutes to complete, it would be a good idea to use `tmux`/`screen` to avoid experiments from being disrupted by ssh getting disconnected. For a crash course on `tmux` see [here](docs/tmux-usage.md). This is by no means necessary and is just a recommendation.  
 
 
