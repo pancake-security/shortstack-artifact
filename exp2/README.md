@@ -107,5 +107,7 @@ Collect and print results
 ./collect_exp2.sh exp2-ycsb-a-varyl3
 ```
 
+#### (Optional) Running YCSB-C
+If you would like to run the experiments with the YCSB-C workload, then you can simply repeat the above steps (each of the sub-experiments) with occurences of "ycsb-a" replaced by "ycsb-c".
 
 
