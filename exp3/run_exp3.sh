@@ -12,7 +12,7 @@ config=$1
 trace_prefix=$2
 objsz=1000
 rep=3
-const_servers=4
+const_servers=$3
 
 for x in 20 40 80 99; do
 
