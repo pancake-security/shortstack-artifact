@@ -57,15 +57,17 @@ cd shortstack-artifact
 git pull origin master
 ```
 
-Now, we are ready to initialize the various components of the system. 
+Now, we are ready to initialize the various components of the system. To ease evaluator burden, we have prepared automated scripts for this purpose (both for this example, and for other experiments in the paper). The following script will take care of (1) starting up and initializing the key-valye store on one of the VMs (2) starting up the L1, L2, L3 proxy servers on different VMs and initializing them. All of this happens automatically with no user interaction required (the script is aware of the VMs in the cluster via the hosts file that we copied over earlier). 
   
 ```
 cd hello_world
 ./init_setup.sh traces/helloworld
 ```
 
-Run client
+Once the above step is complete, clients can interact with Shortstack. The below command will run a client that executes the operations from the following simple trace: traces/helloworld, which performs PUT operations on 5 keys, and then performs GET operations on the same keys to retrieve their values.
 
 ```
 /local/deploy/shortstack_driver -h /local/deploy/hosts.csv -t traces/helloworld
 ```
+  
+If successful, you should see the values returned by the GET operations read "hello world shortstack is working".
