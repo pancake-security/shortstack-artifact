@@ -8,7 +8,7 @@ This repo contains scripts and instructions for running the experiments from "Sh
 
 For artifact evaluation, given the scale of our experiments, we deploy all of the systems on AWS Cloud Services. To reduce evaluator burden, we will provide pre-configured instances with all relevant binaries and files. However, due to the high cost of EC2 instances, we are unable to keep all instances running throughput the evaluation period. We request the evaluators to reserve time-slots through this <TODO: calendar>, and we will make sure the instances are available before the time-slot starts. We request evaluators to mark themselves as Reviewer A/B/C, etc., to preserve anonymity. 
 
-**We kindly request evaluators to reserve time-slots judiciously. Estimated times for both Getting Started and Reproducing Results are provided below. Please avoid over-provisioning time-slots**
+**We kindly request evaluators to reserve time-slots judiciously. Estimated times for both Getting Started and Reproducing Results are provided below. Please avoid over-provisioning time-slots, as it can be expensive to keep EC2 instances running for long periods of time.**
 
 A private access key will be used to access all EC2 instances; we plan to share the key with evaluators anonymously. Once the private key is provided, the following steps should permit ssh access to the instances:
 
