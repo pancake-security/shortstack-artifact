@@ -69,7 +69,7 @@ Use the following automated script to run the experiment. Manual intervention is
 
 ```
 cd exp3
-./run_exp3.sh exp3-ycsb-a /local/workloads/ycsb-a-1m
+./run_exp3.sh exp3-ycsb-a /local/workloads/ycsb-a-1m 4
 ```
 
 Collect and print the results in readable form
@@ -78,5 +78,7 @@ Collect and print the results in readable form
 ./collect_exp3.sh exp3-ycsb-a
 ```
 
+#### (Optional) Running other x values
 
+If you would like to run the experiment for other x-values in Figure 13b of the paper, then run the above with the last argument of `run_exp3.sh` set to the desired x-value. It would also be good to change the label of the experiment `exp3-ycsb-a` to something different, e.g. `exp2-ycsb-a-x2`, to differentiate between the results for different x-values.
 
