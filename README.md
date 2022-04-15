@@ -19,7 +19,7 @@ ssh -i shortstack.pem ubuntu@public_ip
 
 We also provide AWS EC2 AMI images and necessary scripts, saving the effort from setting up their specific environments if the evaluators want to launch the instances from their own AWS accounts. 
 
-Please check this [document](docs/aws_info.md) for information on accessing and using AWS EC2 machines.
+Please check this [document](docs/aws_info.md) for information on accessing and using AWS EC2 machines. For details on the EC2 instance types used, configuration, and how components of the system are mapped to EC2 instances see [here](docs/ec2-details.md).
 
 
 ## Directory structure 
