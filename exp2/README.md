@@ -6,7 +6,7 @@ This experiment corresponds to Section 6.1, paragraph 2, Figure 12 of the paper.
 
 ### Preparation
 
-(These are the common preparation steps across most experiments. For a more detailed description of what each of these steps does, refer to [this](../hello_world/README.md))
+_(These are the common preparation steps across most experiments (exp1-4). For a more detailed description of what each of these steps does, refer to [this](../hello_world/README.md). If you have already undertaken these steps recently while running a previous experiment, then you can skip to directly running the experiments on the client VM)_
 
 SSH into Gateway VM (see [here](../docs/aws_info.md) for details)
 
