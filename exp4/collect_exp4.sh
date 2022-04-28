@@ -10,6 +10,6 @@ export SHORTSTACK_SERVERS=$SHORTSTACK_HOSTS
 
 config=$1
 
-cat $srcdir/data/$config.xput | head -n 1600 | tail -n 200 > $srcdir/data/$config.xputgraph
+cat $srcdir/data/$config.xput | head -n 1450 | tail -n 200 > $srcdir/data/$config.xputgraph
 
 echo "Wrote graph data to data/$config.xputgraph"
