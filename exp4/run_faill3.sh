@@ -15,7 +15,7 @@ rep=3
 const_servers=4
 
 # Initialize setup
-$ARTIFACT_ROOT/scripts/init_exp_mtl3.sh $const_servers $const_servers $const_servers $rep $const_servers $trace $objsz nopushbins none
+$ARTIFACT_ROOT/scripts/init_exp.sh $const_servers $const_servers $const_servers $rep $const_servers $trace $objsz nopushbins none
 
 sleep 4;
 
